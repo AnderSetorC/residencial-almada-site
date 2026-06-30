@@ -1,0 +1,9 @@
+.claude/
+.vercel/
+.DS_Store
+Thumbs.db
+*.log
+
+# Material bruto extraido do PDF — nao usado pelo site, so pra consulta local
+imagens/pdf-original/
+imagens/pdf-pages/

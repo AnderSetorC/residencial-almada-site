@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Residencial Almada — Sua casa própria em Londrina - PR. Apartamentos de 2 quartos a partir de R$ 399. Condomínio clube com piscina, churrasqueira, academia, playground e pet place. MCMV + Cohapar. Fale agora com a Pleniude Negócios Imobiliários." />
+<meta property="og:title" content="Residencial Almada — Apartamentos a partir de R$ 399 em Londrina - PR" />
+<meta property="og:description" content="Apartamentos de 2 quartos em Londrina - PR a partir de R$ 399. Entrada em até 60x. Subsídio de até R$ 75 mil. Aprovado mesmo com renda informal." />
+<meta property="og:image" content="imagens/fachada-portao.jpg" />
+<title>Residencial Almada — Apartamentos a partir de R$ 399 em Londrina/PR | Blendi Empreendimentos</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --verde-escuro: #2f5a3d;
+    --verde-medio: #4b8a5a;
+    --verde-claro: #7fb87a;
+    --verde-suave: #d4ecd0;
+    --amarelo: #f4c63d;
+    --amarelo-claro: #ffe07a;
+    --azul: #1f4e79;
+    --azul-claro: #3a82c4;
+    --cinza-escuro: #1f1f1f;
+    --cinza-medio: #4a4a4a;
+    --cinza-claro: #f5f5f5;
+    --branco: #ffffff;
+    --whatsapp: #25d366;
+    --whatsapp-escuro: #128c7e;
+    --sombra: 0 10px 30px rgba(0,0,0,.12);
+    --sombra-forte: 0 20px 50px rgba(0,0,0,.25);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cinza-escuro);
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: var(--branco);
+  }
+  img { max-width:100%; display:block; }
+
+  /* BOTÃO WHATSAPP FLUTUANTE */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--whatsapp);
+    color: #fff;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(37,211,102,.45);
+    z-index: 999;
+    transition: transform .25s, box-shadow .25s;
+    animation: pulseWa 2.2s ease-in-out infinite;
+    text-decoration: none;
+  }
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 28px rgba(37,211,102,.6);
+  }
+  .whatsapp-float svg { width: 34px; height: 34px; }
+  @keyframes pulseWa {
+    0%, 100% { box-shadow: 0 8px 20px rgba(37,211,102,.45), 0 0 0 0 rgba(37,211,102,.55); }
+    50% { box-shadow: 0 8px 20px rgba(37,211,102,.45), 0 0 0 18px rgba(37,211,102,0); }
+  }
+
+  /* HEADER */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(255,255,255,.96);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    z-index: 100;
+    transition: padding .25s;
+  }
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .logo-area {
+    gap: 22px !important;
+  }
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .logo-almada {
+    height: 48px;
+  }
+  .logo-divisor {
+    width: 1px;
+    height: 36px;
+    background: #ccc;
+  }
+  .logo-pleniude {
+    height: 38px;
+  }
+  .btn-cta-header {
+    background: var(--verde-escuro);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background .25s, transform .25s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-cta-header:hover {
+    background: var(--verde-medio);
+    transform: translateY(-2px);
+  }
+
+  /* BARRA DE PARCEIROS / SELOS */
+  .selos-bar {
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    flex-wrap: wrap;
+    margin-top: 80px; /* header height */
+    z-index: 50;
+    box-shadow: 0 2px 6px rgba(0,0,0,.04);
+  }
+  .selos-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--cinza-medio);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    opacity: .9;
+  }
+  .selos-bar-item img {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+  }
+  .selos-bar-item img.selo-mcmv,
+  .selos-bar-item img.selo-cohapar {
+    height: 78px;
+  }
+  .selos-bar-item .label {
+    line-height: 1.2;
+    font-size: 11px;
+    color: var(--cinza-medio);
+  }
+
+  /* BLOCO DE PARCEIROS NA SEÇÃO CONDIÇÃO */
+  .partners-strip {
+    margin-top: 40px;
+    padding: 22px 24px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+  }
+  .partners-strip .partner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+  }
+  .partners-strip .partner img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px 14px;
+  }
+  .partners-strip .partner.partner-mcmv img,
+  .partners-strip .partner.partner-cohapar img {
+    height: 80px;
+    padding: 8px 16px;
+  }
+  .partners-strip .partner.partner-mcmv img,
+  .partners-strip .partner.partner-cohapar img {
+    background: #fff;
+    padding: 8px 16px;
+  }
+  .partners-strip .partner.partner-blendi img {
+    height: 56px;
+    padding: 4px 10px;
+  }
+
+  /* FAIXA FINAL DE PARCEIROS */
+  .partners-faixa {
+    background: var(--cinza-claro);
+    padding: 50px 24px;
+    border-top: 1px solid #e5e5e5;
+  }
+  .partners-faixa-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+  .partner-card {
+    background: #fff;
+    padding: 28px 24px;
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+    transition: transform .3s, box-shadow .3s;
+  }
+  .partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-forte);
+  }
+  .partner-card .partner-logo {
+    height: 100px;
+    width: auto;
+    max-width: 240px;
+    object-fit: contain;
+    margin: 0 auto 14px;
+    display: block;
+  }
+  .partner-card .partner-logo.partner-logo-mcmv {
+    height: 130px;
+    max-width: 220px;
+  }
+  .partner-card .partner-logo.partner-logo-cohapar {
+    height: 130px;
+    max-width: 220px;
+  }
+  .partner-card .partner-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--verde-escuro);
+    margin-bottom: 4px;
+  }
+  .partner-card .partner-role {
+    font-size: 13px;
+    color: var(--cinza-medio);
+  }
+
+  /* HERO / BANNER PRINCIPAL */
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    padding-top: 80px;
+  }
+  .hero.with-bar {
+    min-height: 88vh;
+  }
+  .hero-slider {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1.05);
+    transition: opacity 1.4s ease-in-out, transform 8s ease-out;
+  }
+  .hero-slide.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(31,46,32,.85) 0%, rgba(31,46,32,.55) 50%, rgba(31,46,32,.75) 100%);
+    z-index: 2;
+  }
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr .9fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .hero-text .pre-headline {
+    display: inline-block;
+    background: var(--amarelo);
+    color: var(--cinza-escuro);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    animation: fadeInUp .8s .1s both;
+  }
+  .hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 20px;
+    animation: fadeInUp .8s .2s both;
+  }
+  .hero-text h1 .highlight {
+    color: var(--amarelo);
+    display: inline-block;
+    position: relative;
+  }
+  .hero-text h1 .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 4px;
+    height: 6px;
+    background: rgba(244,198,61,.4);
+    z-index: -1;
+  }
+  .hero-text .sub {
+    font-size: 18px;
+    margin-bottom: 32px;
+    opacity: .95;
+    animation: fadeInUp .8s .35s both;
+  }
+  .hero-bullets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 36px;
+    animation: fadeInUp .8s .5s both;
+  }
+  .hero-bullet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .hero-bullet::before {
+    content: '✓';
+    width: 26px; height: 26px;
+    background: var(--verde-medio);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .hero-cta-group {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    animation: fadeInUp .8s .65s both;
+  }
+
+  /* CARD DE OFERTA (hero) */
+  .hero-card {
+    background: rgba(255,255,255,.97);
+    color: var(--cinza-escuro);
+    border-radius: 22px;
+    padding: 32px;
+    box-shadow: var(--sombra-forte);
+    animation: fadeInRight .9s .3s both;
+    position: relative;
+  }
+  .hero-card::before {
+    content: 'OFERTA';
+    position: absolute;
+    top: -14px;
+    left: 24px;
+    background: var(--vermelho, #e63946);
+    background: #e63946;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .hero-card .ribbon-mcmv {
+    background: linear-gradient(135deg, var(--amarelo), var(--amarelo-claro));
+    color: var(--cinza-escuro);
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .hero-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: var(--verde-escuro);
+  }
+  .hero-price {
+    text-align: center;
+    padding: 22px;
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde-medio));
+    border-radius: 16px;
+    color: #fff;
+    margin-bottom: 22px;
+  }
+  .hero-price .label {
+    font-size: 13px;
+    text-transform: uppercase;
+    opacity: .9;
+    letter-spacing: 1px;
+  }
+  .hero-price .price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1;
+    margin: 6px 0 4px;
+  }
+  .hero-price .price small { font-size: 22px; vertical-align: super; }
+  .hero-price .price-text { font-size: 13px; opacity: .9; }
+  .hero-card ul {
+    list-style: none;
+    margin-bottom: 24px;
+  }
+  .hero-card ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+  }
+  .hero-card ul li:last-child { border-bottom: none; }
+  .hero-card ul li::before {
+    content: '✓';
+    color: var(--verde-medio);
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  /* BOTÕES */
+  .btn-wpp {
+    background: var(--whatsapp);
+    color: #fff;
+    padding: 16px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background .25s, transform .25s, box-shadow .25s;
+    box-shadow: 0 8px 20px rgba(37,211,102,.4);
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    width: 100%;
+  }
+  .btn-wpp:hover {
+    background: var(--whatsapp-escuro);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(37,211,102,.55);
+  }
+  .btn-wpp svg { width: 22px; height: 22px; }
+  .btn-wpp-lg { padding: 20px 36px; font-size: 18px; }
+  .btn-sec {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 26px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .25s, color .25s;
+    font-size: 15px;
+  }
+  .btn-sec:hover {
+    background: #fff;
+    color: var(--verde-escuro);
+  }
+
+  /* SEÇÕES GERAIS */
+  section { padding: 80px 24px; }
+  .container { max-width: 1280px; margin: 0 auto; }
+  .section-head {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .section-tag {
+    display: inline-block;
+    background: var(--verde-suave);
+    color: var(--verde-escuro);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .section-head h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(28px, 3.6vw, 44px);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 14px;
+    color: var(--verde-escuro);
+  }
+  .section-head p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 17px;
+    color: var(--cinza-medio);
+  }
+
+  /* SEÇÃO BENEFÍCIOS / DIFERENCIAIS */
+  .beneficios {
+    background: var(--cinza-claro);
+  }
+  .beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  .beneficio-card {
+    background: #fff;
+    padding: 30px 24px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: var(--sombra);
+    transition: transform .3s, box-shadow .3s;
+    border-top: 4px solid var(--verde-medio);
+  }
+  .beneficio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--sombra-forte);
+  }
+  .beneficio-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--verde-claro), var(--verde-medio));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 28px;
+  }
+  .beneficio-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--verde-escuro);
+  }
+  .beneficio-card p {
+    font-size: 14px;
+    color: var(--cinza-medio);
+  }
+
+  /* SEÇÃO CONDIÇÃO COMERCIAL */
+  .condicao {
+    background: linear-gradient(135deg, var(--verde-escuro) 0%, var(--verde-medio) 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .condicao::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 300px; height: 300px;
+    background: rgba(244,198,61,.15);
+    border-radius: 50%;
+    animation: floatBubble 8s ease-in-out infinite;
+  }
+  .condicao::after {
+    content: '';
+    position: absolute;
+    bottom: -120px; left: -80px;
+    width: 280px; height: 280px;
+    background: rgba(255,255,255,.06);
+    border-radius: 50%;
+    animation: floatBubble 10s ease-in-out infinite reverse;
+  }
+  @keyframes floatBubble {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    50% { transform: translate(20px,-30px) scale(1.05); }
+  }
+  .condicao-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .condicao-item {
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(10px);
+    padding: 28px 22px;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.2);
+    text-align: center;
+    transition: transform .3s, background .3s;
+  }
+  .condicao-item:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,.2);
+  }
+  .condicao-item .num {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--amarelo);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .condicao-item .desc {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .condicao-cta {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+  }
+  .condicao-cta p {
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+
+  /* SEÇÃO LAZER (GALERIA) */
+  .lazer {
+    background: var(--branco);
+  }
+  .lazer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 14px;
+  }
+  .lazer-item {
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform .35s, box-shadow .35s;
+    box-shadow: var(--sombra);
+  }
+  .lazer-item:hover {
+    transform: scale(1.03);
+    box-shadow: var(--sombra-forte);
+    z-index: 2;
+  }
+  .lazer-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform .6s;
+  }
+  .lazer-item:hover img { transform: scale(1.1); }
+  .lazer-item .label {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,.85));
+    color: #fff;
+    padding: 20px 14px 12px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .lazer-item.tall { grid-row: span 2; }
+  .lazer-item.wide { grid-column: span 2; }
+
+  /* SEÇÃO APARTAMENTO */
+  .apartamento {
+    background: var(--cinza-claro);
+  }
+  .ap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .ap-imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .ap-imagens img {
+    border-radius: 14px;
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform .3s;
+  }
+  .ap-imagens img:hover { transform: scale(1.04); }
+  .ap-imagens img:first-child {
+    grid-column: span 2;
+    height: 320px;
+  }
+  .ap-info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--verde-escuro);
+    margin-bottom: 18px;
+    line-height: 1.15;
+  }
+  .ap-info p {
+    color: var(--cinza-medio);
+    margin-bottom: 22px;
+    font-size: 16px;
+  }
+  .ap-info ul {
+    list-style: none;
+    margin-bottom: 28px;
+  }
+  .ap-info ul li {
+    padding: 8px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 15px;
+  }
+  .ap-info ul li::before {
+    content: '🏡';
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+
+  /* SEÇÃO LOCALIZAÇÃO */
+  .localizacao {
+    background: linear-gradient(180deg, var(--cinza-claro) 0%, #fff 100%);
+  }
+  .loc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 50px;
+    align-items: center;
+  }
+  .loc-info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--verde-escuro);
+    margin-bottom: 16px;
+    line-height: 1.15;
+  }
+  .loc-info p {
+    font-size: 16px;
+    color: var(--cinza-medio);
+    margin-bottom: 24px;
+  }
+  .loc-lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 18px;
+  }
+  .loc-lista li {
+    padding: 8px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+  }
+  .loc-lista li::before {
+    content: '📍';
+    font-size: 16px;
+  }
+  .loc-mapa {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--sombra-forte);
+  }
+  .loc-mapa img {
+    width: 100%;
+    display: block;
+  }
+
+  /* SEÇÃO IMPLANTAÇÃO */
+  .implantacao {
+    background: #fff;
+  }
+  .implantacao-img {
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--sombra-forte);
+  }
+
+  /* SEÇÃO CTA FINAL */
+  .cta-final {
+    background: linear-gradient(135deg, #1f1f1f 0%, var(--verde-escuro) 100%);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-final::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(244,198,61,.18), transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(75,138,90,.3), transparent 50%);
+  }
+  .cta-final .container { position: relative; z-index: 2; }
+  .cta-final h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 18px;
+  }
+  .cta-final h2 span { color: var(--amarelo); }
+  .cta-final p {
+    max-width: 720px;
+    margin: 0 auto 36px;
+    font-size: 18px;
+    opacity: .95;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #0e0e0e;
+    color: #aaa;
+    padding: 50px 24px 30px;
+    font-size: 14px;
+  }
+  .footer-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  .footer-col h4 {
+    color: #fff;
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
+  .footer-col p, .footer-col a {
+    color: #aaa;
+    line-height: 1.8;
+    text-decoration: none;
+    display: block;
+  }
+  .footer-col a:hover { color: var(--amarelo); }
+  .footer-bottom {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+
+  /* ANIMAÇÕES DE ENTRADA */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity .8s ease-out, transform .8s ease-out;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* RESPONSIVO */
+  @media (max-width: 960px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .ap-grid, .loc-grid {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+    .lazer-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 180px;
+    }
+    .footer-grid { grid-template-columns: 1fr; }
+    .partners-faixa-inner { grid-template-columns: 1fr; }
+    .partners-strip { gap: 24px; }
+    .partners-strip .partner img { height: 54px; }
+    .partners-strip .partner.partner-mcmv img,
+    .partners-strip .partner.partner-cohapar img { height: 64px; }
+    .selos-bar { gap: 22px; padding: 14px 18px; }
+    .selos-bar-item img { height: 52px; }
+    .selos-bar-item img.selo-mcmv,
+    .selos-bar-item img.selo-cohapar { height: 62px; }
+    .selos-bar-item .label { font-size: 10px; }
+    .partner-card .partner-logo { height: 80px; }
+    .partner-card .partner-logo.partner-logo-mcmv,
+    .partner-card .partner-logo.partner-logo-cohapar { height: 100px; }
+    .btn-cta-header { padding: 10px 16px; font-size: 13px; }
+    .logo-area img[alt="Pleniude Negócios Imobiliários"] { height: 60px !important; }
+    .logo-area img[alt="Blendi Empreendimentos"] { height: 42px !important; }
+    .logo-divisor { height: 40px; }
+  }
+  @media (max-width: 540px) {
+    .lazer-grid { grid-template-columns: 1fr; grid-auto-rows: 220px; }
+    .lazer-item.wide { grid-column: span 1; }
+    .hero-bullets { grid-template-columns: 1fr; }
+    section { padding: 60px 18px; }
+    .hero-text h1 { font-size: 34px; }
+    .header-inner { padding: 12px 14px; gap: 10px; }
+    .logo-area { gap: 12px !important; }
+    .logo-area img[alt="Pleniude Negócios Imobiliários"] { height: 52px !important; }
+    .logo-area img[alt="Blendi Empreendimentos"] { height: 36px !important; }
+    .logo-divisor { display: none; }
+    .selos-bar-item .label { display: none; }
+  }
+
+  /* UTIL */
+  .sr-only {
+    position: absolute; width:1px; height:1px;
+    padding:0; margin:-1px; overflow:hidden;
+    clip: rect(0,0,0,0); white-space:nowrap; border:0;
+  }
+</style>
+</head>
+<body>
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<a class="whatsapp-float"
+   href="https://wa.me/5543998582436?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Residencial%20Almada%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+   target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+    <path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45-.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4zm0 21.21h-.01c-1.74 0-3.45-.47-4.95-1.36l-.36-.21-4.03 1.06 1.08-3.93-.23-.37c-.95-1.55-1.45-3.32-1.45-5.16 0-5.34 4.34-9.68 9.68-9.68 2.59 0 5.02 1.01 6.85 2.84 1.83 1.83 2.84 4.26 2.84 6.85 0 5.34-4.34 9.96-9.42 9.96z"/>
+  </svg>
+</a>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <div class="logo-area">
+      <img src="imagens/logo-pleniude.png" alt="Pleniude Negócios Imobiliários" style="height:72px;width:auto;object-fit:contain;">
+      <div class="logo-divisor"></div>
+      <img src="imagens/logo-blendi-original.png" alt="Blendi Empreendimentos" style="height:50px;width:auto;object-fit:contain;">
+    </div>
+    <a href="https://wa.me/5543998582436?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20Residencial%20Almada."
+       class="btn-cta-header" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45-.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4z"/></svg>
+      Falar agora
+    </a>
+  </div>
+</header>
+
+<!-- BARRA DE SELOS / PARCEIROS -->
+<div class="selos-bar">
+  <div class="selos-bar-item">
+    <img src="imagens/logo-blendi-original.png" alt="Blendi Empreendimentos">
+    <div class="label">Incorporadora<br>responsável</div>
+  </div>
+  <div class="selos-bar-item">
+    <img src="imagens/logo-mcmv-certo.png" alt="Minha Casa Minha Vida" class="selo-mcmv">
+    <div class="label">Benefício<br>MCMV</div>
+  </div>
+  <div class="selos-bar-item">
+    <img src="imagens/logo-cohapar.jfif" alt="Cohapar" class="selo-cohapar">
+    <div class="label">Subsídio<br>Cohapar</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero with-bar">
+  <div class="hero-slider">
+    <div class="hero-slide active" style="background-image:url('imagens/render-lazer-aerial.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('imagens/fachada-noturna.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('imagens/piscina.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('imagens/sala-apartamento.jpg')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <span class="pre-headline">🏠 Minha Casa Minha Vida + Cohapar</span>
+      <h1>Chegou a hora de <span class="highlight">sair do aluguel</span> e morar no que é seu.</h1>
+      <p class="sub">Apartamentos de 2 quartos em condomínio clube na Zona Norte de <strong>Londrina/PR</strong>. Lazer completo, segurança 24h e parcelas que cabem no seu bolso.</p>
+      <div class="hero-bullets">
+        <div class="hero-bullet">Parcelas a partir de R$ 399</div>
+        <div class="hero-bullet">Entrada em até 60x</div>
+        <div class="hero-bullet">Subsídio de até R$ 75 mil</div>
+        <div class="hero-bullet">Aprovado com renda informal</div>
+      </div>
+      <div class="hero-cta-group">
+        <a href="https://wa.me/5543998582436?text=Quero%20conhecer%20o%20Residencial%20Almada%20e%20fazer%20uma%20simula%C3%A7%C3%A3o."
+           class="btn-wpp btn-wpp-lg" target="_blank" rel="noopener" style="width:auto;">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45-.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4z"/></svg>
+          Falar com consultor
+        </a>
+        <a href="#condicao" class="btn-sec">Ver condições</a>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <div class="ribbon-mcmv">✨ Benefício MCMV + Cohapar</div>
+      <h3>Simule seu apê agora mesmo</h3>
+      <div class="hero-price">
+        <div class="label">Parcelas a partir de</div>
+        <div class="price"><small>R$</small>399<small style="font-size:18px;">/mês</small></div>
+        <div class="price-text">Entrada em até 60x • Sinal a partir de R$ 500</div>
+      </div>
+      <ul>
+        <li>Subsídio de até R$ 75.000</li>
+        <li>Aprovado mesmo com renda informal</li>
+        <li>2 quartos a partir de 40 m²</li>
+        <li>Condomínio clube completo</li>
+        <li>Portaria 24h e lazer p/ família toda</li>
+      </ul>
+      <a href="https://wa.me/5543998582436?text=Quero%20fazer%20uma%20simula%C3%A7%C3%A3o%20para%20o%20Residencial%20Almada."
+         class="btn-wpp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45-.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4z"/></svg>
+        Quero fazer minha simulação
+      </a>
+    </aside>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS / DIFERENCIAIS -->
+<section class="beneficios">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Por que escolher o Almada</span>
+      <h2>Tudo o que sua família precisa, pertinho de você.</h2>
+      <p>Mais que um apartamento: um condomínio clube completo, com segurança, lazer e a tranquilidade de morar no que é seu.</p>
+    </div>
+    <div class="beneficios-grid">
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon">🏊</div>
+        <h4>Piscina</h4>
+        <p>Piscina com vestiário pra família curtir o ano inteiro.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon">🥩</div>
+        <h4>Churrasqueira</h4>
+        <p>Espaço gourmet com churrasqueira pra receber os amigos.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon">🏋️</div>
+        <h4>Academia</h4>
+        <p>Academina completa sem precisar sair de casa.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon">🎉</div>
+        <h4>Salão de Festas</h4>
+        <p>Comemore com a família sem sair do condomínio.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon">🛝</div>
+        <h4>Playground</h4>
+        <p>Espaço seguro e divertido pras crianças se divertirem.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon">🐶</div>
+        <h4>Espaço Pet</h4>
+        <p>Área exclusiva com banho pro seu pet ficar sempre feliz.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon">🏐</div>
+        <h4>Quadras</h4>
+        <p>Quadra esportiva e quadras de areia pra toda a família.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon">🔐</div>
+        <h4>Portaria 24h</h4>
+        <p>Segurança e tranquilidade pra você dormir sossegado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDIÇÃO COMERCIAL -->
+<section class="condicao" id="condicao">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag" style="background:rgba(244,198,61,.25);color:var(--amarelo);">Oferta especial</span>
+      <h2 style="color:#fff;">Condições que cabem no seu bolso</h2>
+      <p style="color:rgba(255,255,255,.85);">Aproveite os benefícios do Minha Casa Minha Vida e da Cohapar antes que as vagas acabem.</p>
+    </div>
+    <div class="condicao-grid">
+      <div class="condicao-item reveal">
+        <div class="num">R$ 399</div>
+        <div class="desc">Parcelas a partir de</div>
+      </div>
+      <div class="condicao-item reveal">
+        <div class="num">60x</div>
+        <div class="desc">Entrada parcelada</div>
+      </div>
+      <div class="condicao-item reveal">
+        <div class="num">R$ 75 mil</div>
+        <div class="desc">Subsídio MCMV</div>
+      </div>
+      <div class="condicao-item reveal">
+        <div class="num">R$ 500</div>
+        <div class="desc">Sinal pra iniciar</div>
+      </div>
+    </div>
+
+    <div class="partners-strip reveal">
+      <div class="partner">
+        <img src="imagens/logo-blendi-original.png" alt="Blendi Empreendimentos">
+        <span>Blendi<br>Empreendimentos</span>
+      </div>
+      <div class="partner partner-mcmv">
+        <img src="imagens/logo-mcmv-certo.png" alt="Minha Casa Minha Vida" class="partner-img-mcmv">
+        <span>Minha Casa<br>Minha Vida</span>
+      </div>
+      <div class="partner partner-cohapar">
+        <img src="imagens/logo-cohapar.jfif" alt="Cohapar" class="partner-img-cohapar">
+        <span>Subsídio<br>Cohapar</span>
+      </div>
+    </div>
+
+    <div class="condicao-cta reveal">
+      <p>🔑 Renda informal? Sem problema — você pode ser aprovado(a).</p>
+      <a href="https://wa.me/5543998582436?text=Quero%20aproveitar%20as%20condi%C3%A7%C3%B5es%20do%20MCMV%20no%20Residencial%20Almada."
+         class="btn-wpp btn-wpp-lg" target="_blank" rel="noopener" style="width:auto;">
+        <svg viewBox="0 0 32 32" fill="currentColor" style="width:22px;height:22px;"><path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4z"/></svg>
+        Quero aproveitar essa oferta
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LAZER -->
+<section class="lazer">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">Condomínio clube</span>
+      <h2>Mais de 15 opções de lazer pra família toda</h2>
+      <p>Piscina, academia, churrasqueira, salão de festas, playground, pet place, redário, horta, quadras e muito mais. Tudo dentro do seu condomínio.</p>
+    </div>
+    <div class="lazer-grid reveal">
+      <div class="lazer-item tall wide">
+        <img src="imagens/render-lazer-aerial.jpg" alt="Vista panorâmica do Residencial Almada" />
+        <div class="label">🏘️ O condomínio clube inteiro é seu</div>
+      </div>
+      <div class="lazer-item tall">
+        <img src="imagens/piscina.jpg" alt="Piscina do Residencial Almada" />
+        <div class="label">🏊 Piscina com vestiário</div>
+      </div>
+      <div class="lazer-item">
+        <img src="imagens/churrasqueira.jpg" alt="Churrasqueira" />
+        <div class="label">🥩 Churrasqueira</div>
+      </div>
+      <div class="lazer-item">
+        <img src="imagens/salao-festas.jpg" alt="Salão de festas" />
+        <div class="label">🎉 Salão de festas</div>
+      </div>
+      <div class="lazer-item wide">
+        <img src="imagens/espaco-pet.jpg" alt="Espaço pet" />
+        <div class="label">🐶 Espaço pet com banho</div>
+      </div>
+      <div class="lazer-item">
+        <img src="imagens/academia.jpg" alt="Academia" />
+        <div class="label">🏋️ Academia</div>
+      </div>
+      <div class="lazer-item">
+        <img src="imagens/playground.jpg" alt="Playground" />
+        <div class="label">🛝 Playground</div>
+      </div>
+      <div class="lazer-item">
+        <img src="imagens/quadra-esportiva.jpg" alt="Quadra esportiva" />
+        <div class="label">🏐 Quadra esportiva</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px;" class="reveal">
+      <a href="https://wa.me/5543998582436?text=Quero%20conhecer%20o%20condom%C3%ADnio%20clube%20do%20Residencial%20Almada."
+         class="btn-wpp btn-wpp-lg" target="_blank" rel="noopener" style="width:auto;">
+        <svg viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45-.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4z"/></svg>
+        Quero conhecer o lazer completo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- APARTAMENTO -->
+<section class="apartamento">
+  <div class="container">
+    <div class="ap-grid">
+      <div class="ap-imagens reveal">
+        <img src="imagens/sala-apartamento.jpg" alt="Sala do apartamento decorado" />
+        <img src="imagens/sala-jantar.jpg" alt="Sala de jantar e cozinha" />
+        <img src="imagens/quarto.jpg" alt="Quarto do apartamento" />
+      </div>
+      <div class="ap-info reveal">
+        <span class="section-tag">Seu novo lar</span>
+        <h2>Apartamentos de 2 quartos com a cara do novo.</h2>
+        <p>Plantas inteligentes, bem distribuídas, com iluminação natural e ventilação priorizadas. Cada detalhe pensado pra quem quer sair do aluguel com conforto e tranquilidade.</p>
+        <ul>
+          <li>2 quartos bem planejados (40 a 42 m²)</li>
+          <li>Sala de estar com cozinha integrada</li>
+          <li>Iluminação natural e ventilação cruzada</li>
+          <li>Acabamento moderno e funcional</li>
+          <li>Opções tipo A (42,77 m²) e tipo B (40,47 m²)</li>
+        </ul>
+        <a href="https://wa.me/5543998582436?text=Quero%20ver%20as%20plantas%20e%20o%20apartmento%20decorado%20do%20Residencial%20Almada."
+           class="btn-wpp" target="_blank" rel="noopener" style="width:auto;">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45-.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4z"/></svg>
+          Quero ver plantas e valores
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="localizacao">
+  <div class="container">
+    <div class="loc-grid">
+      <div class="loc-info reveal">
+        <span class="section-tag">Localização</span>
+        <h2>Pertinho de tudo. A 14 minutos do centro de Londrina.</h2>
+        <p>O Residencial Almada está na Zona Norte, em uma região com toda a infraestrutura que sua família precisa pra viver bem.</p>
+        <ul class="loc-lista">
+          <li>Ponto de ônibus a 100 m</li>
+          <li>Escola estadual a 50 m</li>
+          <li>Escola municipal a 300 m</li>
+          <li>UBS a 700 m</li>
+          <li>Supermercado W a 500 m</li>
+          <li>Av. Saul Elkind a 600 m</li>
+          <li>Farmácias e mercearias a pé</li>
+          <li>CMEI e creches próximas</li>
+        </ul>
+        <a href="https://wa.me/5543998582436?text=Quero%20saber%20mais%20sobre%20a%20localiza%C3%A7%C3%A3o%20do%20Residencial%20Almada."
+           class="btn-wpp" target="_blank" rel="noopener" style="width:auto;margin-top:18px;">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45-.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4z"/></svg>
+          Falar com a equipe agora
+        </a>
+      </div>
+      <div class="loc-mapa reveal">
+        <img src="imagens/mapa-localizacao.jpg" alt="Mapa de localização do Residencial Almada" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPLANTAÇÃO -->
+<section class="implantacao">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-tag">O empreendimento</span>
+      <h2>Mais de 18 mil m² pensados pra família</h2>
+      <p>352 unidades, 11 blocos, 4 pavimentos. Um terreno amplo com lazer, áreas verdes e segurança em cada detalhe.</p>
+    </div>
+    <div class="implantacao-img reveal">
+      <img src="imagens/implantacao.jpg" alt="Implantação do Residencial Almada" />
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA DE PARCEIROS INSTITUCIONAIS -->
+<section class="partners-faixa">
+  <div class="partners-faixa-inner">
+    <div class="partner-card reveal">
+      <img src="imagens/logo-blendi-original.png" alt="Blendi Empreendimentos" class="partner-logo">
+      <div class="partner-name">Blendi Empreendimentos</div>
+      <div class="partner-role">Incorporadora responsável</div>
+    </div>
+    <div class="partner-card reveal">
+      <img src="imagens/logo-mcmv-certo.png" alt="Minha Casa Minha Vida" class="partner-logo partner-logo-mcmv">
+      <div class="partner-name">Programa federal de habitação</div>
+      <div class="partner-role">Subsídio de até R$ 75 mil</div>
+    </div>
+    <div class="partner-card reveal">
+      <img src="imagens/logo-cohapar.jfif" alt="Cohapar" class="partner-logo partner-logo-cohapar">
+      <div class="partner-name">Companhia de Habitação do Paraná</div>
+      <div class="partner-role">Programa habitacional do estado</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container reveal">
+    <h2>Sua nova vida começa com <span>uma mensagem</span>.</h2>
+    <p>Fale agora com um consultor da <strong>Pleniude Negócios Imobiliários</strong> e descubra como é fácil conquistar sua casa própria no Residencial Almada.</p>
+    <a href="https://wa.me/5543998582436?text=Ol%C3%A1!%20Quero%20conquistar%20minha%20casa%20pr%C3%B3pria%20no%20Residencial%20Almada."
+       class="btn-wpp btn-wpp-lg" target="_blank" rel="noopener" style="width:auto;font-size:18px;">
+      <svg viewBox="0 0 32 32" fill="currentColor"><path d="M19.11 17.21c-.28-.14-1.66-.82-1.92-.92-.26-.09-.45-.14-.63.14-.19.28-.72.92-.88 1.11-.16.18-.32.21-.6.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.63-1.52-.86-2.08-.23-.55-.46-.47-.63-.48-.16-.01-.35-.01-.54-.01-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36 0 1.39 1.01 2.74 1.15 2.93.14.19 2 3.05 4.84 4.27.68.29 1.2.47 1.61.6.68.22 1.29.19 1.78.11.54-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33zM16.02 4C9.62 4 4.43 9.18 4.43 15.58c0 2.05.54 4.05 1.56 5.81L4.4 28l6.79-1.78c1.7.93 3.62 1.42 5.56 1.42h.01c6.4 0 11.59-5.18 11.59-11.58 0-3.09-1.21-6-3.4-8.19C22.75 5.21 19.84 4 16.02 4z"/></svg>
+      Falar agora no WhatsApp
+    </a>
+    <p style="margin-top:24px;font-size:14px;opacity:.85;">
+      <span style="background:var(--amarelo);color:var(--cinza-escuro);padding:5px 12px;border-radius:6px;font-weight:800;font-size:13px;letter-spacing:1px;display:inline-block;margin-bottom:6px;">🔑 CRECI 9652</span><br>
+      Atendimento rápido, sem compromisso. <strong>Pleniude Negócios Imobiliários</strong>.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Residencial Almada</h4>
+      <p>Condomínio clube na Zona Norte de Londrina/PR. Apartamentos de 2 quartos a partir de R$ 399 com benefícios do Minha Casa Minha Vida + Cohapar.</p>
+      <p style="margin-top:10px;">Incorporadora: <strong style="color:#fff;">Blendi Empreendimentos</strong></p>
+      <div style="display:flex;gap:14px;margin-top:12px;align-items:center;flex-wrap:wrap;">
+        <img src="imagens/logo-blendi-original.png" alt="Blendi" style="height:48px;background:#fff;border-radius:6px;padding:6px 12px;">
+        <img src="imagens/logo-mcmv-certo.png" alt="MCMV" style="height:56px;background:#fff;border-radius:6px;padding:6px 12px;">
+        <img src="imagens/logo-cohapar.jfif" alt="Cohapar" style="height:56px;background:#fff;border-radius:6px;padding:6px 12px;">
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Imobiliária responsável</h4>
+      <div style="background:#fff;border-radius:8px;padding:8px 14px;display:inline-block;margin-bottom:14px;">
+        <img src="imagens/logo-pleniude.png" alt="Pleniude Negócios Imobiliários" style="height:64px;width:auto;display:block;">
+      </div>
+      <p><strong style="color:#fff;">Pleniude Negócios Imobiliários</strong></p>
+      <p>Av. Maringá, 745 — Sala 2 · Londrina/PR</p>
+      <p style="display:flex;align-items:center;gap:8px;">
+        <span style="background:var(--amarelo);color:var(--cinza-escuro);padding:4px 10px;border-radius:6px;font-weight:800;font-size:13px;letter-spacing:1px;">🔑 CRECI: 9652</span>
+      </p>
+      <a href="https://wa.me/5543998582436" target="_blank" rel="noopener" style="margin-top:8px;">📱 (43) 99858-2436</a>
+    </div>
+    <div class="footer-col">
+      <h4>Atendimento</h4>
+      <a href="https://wa.me/5543998582436?text=Quero%20conhecer%20o%20Residencial%20Almada" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/plenitudedelondrina/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5543998582436?text=Quero%20agendar%20uma%20visita%20ao%20Residencial%20Almada" target="_blank" rel="noopener">Agendar visita</a>
+    </div>
+    <div class="footer-col">
+      <h4>📍 Endereço</h4>
+      <p style="color:#fff;font-weight:700;font-size:15px;margin-bottom:6px;">Residencial Almada</p>
+      <p>Av. Giocondo Maturi, 1000</p>
+      <p>Vista Bela · Londrina - PR</p>
+      <p>CEP 86081-542</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=Av.+Giocondo+Maturi,+1000+-+Vista+Bela,+Londrina+-+PR,+86081-542" target="_blank" rel="noopener" style="margin-top:8px;color:var(--amarelo);">🗺️ Ver no Google Maps</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Residencial Almada · Londrina - PR · Todos os direitos reservados. Apartamentos registrados no 2º Serviço de Registro de Imóveis da Comarca de Londrina/PR, sob nº R-7/98.612.</p>
+    <p style="margin-top:6px;opacity:.7;">Descontos válidos conforme programa Minha Casa Minha Vida vigente. Material meramente ilustrativo. As condições comerciais podem sofrer alteração sem aviso prévio.</p>
+  </div>
+</footer>
+
+<script>
+  // ====== HERO SLIDER ======
+  (function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    if (!slides.length) return;
+    let idx = 0;
+    setInterval(() => {
+      slides[idx].classList.remove('active');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('active');
+    }, 5000);
+  })();
+
+  // ====== REVEAL ON SCROLL ======
+  (function() {
+    const els = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(el => io.observe(el));
+  })();
+
+  // ====== HEADER SCROLL ======
+  (function() {
+    const h = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        h.style.boxShadow = '0 4px 18px rgba(0,0,0,.12)';
+      } else {
+        h.style.boxShadow = '0 2px 12px rgba(0,0,0,.08)';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
